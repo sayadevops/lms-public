@@ -6,7 +6,7 @@ pipeline {
     stages {
         
         
-        stage('Building the docker image') {
+         stage('Building the docker image') {
             steps {
                 sh 'cd api && docker build -t abhisheksaya/backend-lms .'
             }
@@ -24,4 +24,5 @@ pipeline {
             }
         }
     }
+}
 
